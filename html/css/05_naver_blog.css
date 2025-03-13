@@ -25,10 +25,12 @@ body {
   height: 35px;
   border-radius: 50%;
   border: 1px solid #aaa;
+  vertical-align: middle;
 }
 
 .post-author {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .post-write-date {
