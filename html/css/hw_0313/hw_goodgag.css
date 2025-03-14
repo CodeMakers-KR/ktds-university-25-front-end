@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 전체를 감싸는 wrapper 먼저 만들고 시작한다. */
+.wrapper {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.top-area {
+  height: 60px;
+  background-color: #fed50a;
+}
+
+.logo-area {
+  display: inline-block;
+  width: 10%;
+  text-align: left;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.menu-area {
+  display: inline-block;
+  width: 89%;
+  text-align: right;
+  margin: 0;
+}
+
+.menu-icon {
+  display: inline-block;
+  width: 5%;
+  border: 2px solid rgb(225, 127, 47);
+  border-radius: 7%;
+}
+
+.icon-img {
+  width: 100%;
+  height: 40px;
+}
+
+.category-area {
+  background-color: #eee;
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.category {
+  display: inline-block;
+  width: 46%;
+  height: 60px;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.select-category {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+.select-category:hover {
+  color: #f00;
+  font-weight: bold;
+  border-bottom: 5px solid #f00;
+}
+
+.banner-area {
+  background-color: #eee;
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-title-area {
+  margin: 10px 0;
+}
+
+.post-title {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.post-title:visited {
+  color: #bbb;
+}
+
+.comment-count {
+  display: inline-block;
+  font-size: 18px;
+  color: rgb(255, 68, 0);
+}
+
+.written-data {
+  margin-bottom: 10px;
+}
+
+.writer {
+  color: rgb(238, 148, 21);
+  font-weight: 500px;
+  margin-right: 10px;
+}
+
+.writer::after {
+  content: "|";
+  color: #444;
+  margin-left: 10px;
+}
+
+.post-sequence {
+  color: #525252;
+  font-weight: 500px;
+  margin-right: 10px;
+}
+
+.post-sequence::after {
+  content: "|";
+  color: #444;
+  margin-left: 10px;
+}
+
+.written-time {
+  color: #525252;
+  font-weight: 500px;
+}

@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4b4b5c;
+  margin: 0;
+}
+
+.main {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.head-line {
+  background-color: #fed50a;
+  width: 600px;
+}
+.home-logo {
+  display: inline-block;
+  text-align: left;
+}
+
+.user-function {
+  width: 510px;
+  display: inline-block;
+  text-align: right;
+}
+
+.icon1 {
+  width: 34px;
+  height: 35px;
+  padding: 0 0 3px 0;
+}
+
+.icon2 {
+  width: 34px;
+  height: 36px;
+  padding: 0 0 3px 0;
+}
+
+.list {
+  background-color: #f7f7f7;
+  width: 600px;
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  text-align: center;
+  width: 48%;
+  padding: 20px 0;
+  /* margin: 0 10px; */
+}
+
+a {
+  /*display: block;*/
+  width: 220px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #262626;
+}
+
+.menu-item:hover {
+  color: #f94064;
+  font-weight: bold;
+  border-bottom: 3px solid #f94064;
+}
+
+.issue:hover {
+}
+
+.anonymity:hover {
+}
+
+.content-box {
+  width: 600px;
+}
+
+.content {
+  display: inline-block;
+  padding: 3.2px 0 3.2px 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.noti-s {
+  background-color: #f00;
+  color: #fff;
+  border: 1px solid #c00;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.noti-p {
+  display: inline-block;
+  width: 24.5%;
+  color: #f00;
+  font-weight: bold;
+}
+
+.noti-p:visited {
+  color: #999;
+}
+
+.uid {
+  margin: 0;
+  color: #c46a33;
+  font-size: 12px;
+}
+
+.uid::after {
+  content: "|";
+  margin: 0 10px;
+  color: #999;
+}
+.num {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.num::after {
+  content: "|";
+  margin: 0 10px;
+  color: #999;
+}
+.date {
+  width: 20%;
+  font-size: 12px;
+  color: #999;
+}
+
+.comment {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.info {
+  display: block;
+}
+
+.nomal {
+  display: inline;
+  text-decoration: none;
+  width: 24.5%;
+}
+.nomal:visited {
+  color: #999;
+}
+
+.footer {
+  text-align: center;
+  background-color: #262626;
+  padding: 0px 0px 30px 0px;
+  width: 600px;
+  height: 150px;
+}
+.login-line {
+  padding: 15px 0 30px 0;
+}
+.login {
+  background-color: #333;
+  border-radius: 5px;
+  width: 69px;
+  height: 25px;
+  padding: 3px;
+  font-size: 15px;
+  color: #aaa;
+}
+p {
+  color: #aaa;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+.list-menu {
+  width: 500px;
+  margin: 0 auto;
+}
