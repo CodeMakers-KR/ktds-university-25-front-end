@@ -1,0 +1,17 @@
+.relative-size {
+  font-size: 1rem; /*32px*/
+  padding: 1rem; /*32px*/
+  background-color: #f00;
+}
+
+.smaller-size {
+  font-size: 0.5rem;
+}
+
+.smaller-size2 {
+  font-size: 0.25rem;
+}
+
+.fix-size {
+  font-size: 16px;
+}

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.banner {
+  background-image: url("sea.avif");
+  width: 90%;
+  min-width: 300px;
+  max-width: 900px;
+
+  height: 50%;
+  min-height: 300px;
+  max-height: 300px;
+  /*background-size: cover;*/
+  background-position: 0 -270px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin: 0px;
+  padding: 300px 0 0 50px;
+}
+
+.icon-list {
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list > li {
+  background-image: url("naver_sprite.png");
+  background-position: -312px -288px;
+  position: relative;
+  width: 86px;
+  height: 86px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.mail {
+  background-image: url("naver_sprite.png");
+  /*background-position: -300px -300px; 박스 */
+  background-position: -425px -453px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.cafe {
+  background-image: url("naver_sprite.png");
+  background-position: -99px -454px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.blog {
+  background-image: url("naver_sprite.png");
+  background-position: -14px -456px;
+  display: inline-block;
+  width: 52px;
+  height: 50px;
+}
+
+.store {
+  background-image: url("naver_sprite.png");
+  background-position: -95px -536px;
+  display: inline-block;
+  width: 54px;
+  height: 50px;
+}
