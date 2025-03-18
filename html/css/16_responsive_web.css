@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #333;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 68.75rem; /*1100px*/
+  padding: 0.625rem; /*10px*/
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.left-box {
+  vertical-align: top;
+  display: inline-block;
+  background-color: #de5dde;
+  /* width: 21.875rem; 350px */
+  width: 30%;
+  max-width: 21.875rem;
+  min-width: 10.875rem;
+  padding: 0.625rem;
+  border-right: 1px solid #666;
+}
+
+.repository {
+  width: 100%;
+  height: 31.25rem; /*500px*/
+}
+
+.recent-activity {
+  width: 100%;
+  height: 31.25rem;
+}
+
+.center-box {
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  max-width: 31.25rem;
+  background-color: #ccc;
+  padding: 0.625rem;
+  height: 63.75rem;
+}
+
+.right-box {
+  width: 13.625rem; /*218px*/
+  display: inline-block;
+  background-color: #8080df;
+  vertical-align: top;
+  padding: 0.625rem; /*10px*/
+}
+
+.latest-change {
+  width: 100%;
+  height: 31.25rem; /*500px*/
+}
+
+.explore-repositories {
+  width: 100%;
+  height: 31.25rem; /*500px*/
+}
+
+/*반응형 웹 시작!*/
+/*
+viewport의 길이가 1100px(68.75) 보다 작아지면
+1. .right-box는 숨긴다.
+2. .center-box의 width는 31.25rem + 13.625rem크기로 조정한다.
+*/
+@media (max-width: 68.75rem) {
+  /* .right-box의 스타일을 재정의 한다. */
+  .right-box {
+    display: none;
+  }
+
+  .center-box {
+    width: 65%;
+    max-width: 44.875rem;
+    min-width: 10.25rem;
+  }
+}
+
+/*
+viewport의 길이가 550px(34.576) 보다 작아지면
+1. .right-box는 표시한다.
+2. .left-box, .center-box, .right-box
+   모두 block display로 변경시킨다.
+   width는 100%로 만든다.
+*/
+@media (max-width: 34.575rem) {
+  .right-box,
+  .center-box,
+  .left-box {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+  .left-box {
+    border-right: none;
+  }
+}

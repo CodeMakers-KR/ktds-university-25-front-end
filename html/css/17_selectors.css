@@ -1,0 +1,40 @@
+.header p {
+  background-color: #f00;
+}
+
+.header > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header > ul li {
+  display: inline-block;
+}
+
+.header > p + div {
+  color: #00f;
+  font-weight: 900;
+  background-color: #ff0;
+  padding: 2rem;
+}
+
+.header > p ~ img {
+  border: 3px solid #f00;
+  width: 3rem;
+  height: 3rem;
+}
+
+/*Attribute Selector*/
+div[class="header"] {
+  color: #0f0;
+  font-weight: 900;
+}
+
+/* Group Selector */
+.header > ul > li,
+.header > ul ol > li {
+  font-size: 0.5rem;
+}
+/* .header > ul > li > ol > li {
+  font-size: 0.5rem;
+} */
