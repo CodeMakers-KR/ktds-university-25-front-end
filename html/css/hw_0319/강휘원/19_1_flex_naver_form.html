@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>flex naver form</title>
-  <link rel="stylesheet" href="19_1_flex_naver_form.css" type="text/css">
-</head>
-<body>
-
-  <div class="regist_wrapper">
-    <!-- 실명 인증 box -->
-    <div>
-      <p>실명 인증된 아이디로 가입</p>
-      <input type="checkbox" />
-    </div>
-    <!-- 아이디 box -->
-    <div>
-      <input type="text" placeholder="아이디">
-    </div>
-    <!-- 비밀번호 box -->
-    <div>
-      <input type="password" placeholder="비밀번호" />
-      <input type="checkbox" />
-    </div>
-    <!-- email box -->
-    <div>
-      <input type="email" placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)">
-    </div>
-    <!-- radio box -->
-    <div>
-      <div class="gender-radio">
-        <input id="male" type="radio" name="gender" />
-        <label for="male">남자</label>
-        <input id="female" type="radio" name="gender" />
-        <label for="female">여자</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex naver form</title>
+    <link rel="stylesheet" href="19_1_flex_naver_form.css" type="text/css" />
+  </head>
+  <body>
+    <div class="regist_wrapper">
+      <!-- 실명 인증 box -->
+      <div>
+        <p>실명 인증된 아이디로 가입</p>
+        <input type="checkbox" />
       </div>
-      <div class="country-radio">
-        <input id="local" type="radio" name="country" />
-        <label for="local">내국인</label>
-        <input id="foreigner" type="radio" name="country" />
-        <label for="foreigner">외국인</label>
+      <!-- 아이디 box -->
+      <div>
+        <input type="text" placeholder="아이디" />
+      </div>
+      <!-- 비밀번호 box -->
+      <div>
+        <input type="password" placeholder="비밀번호" />
+        <input type="checkbox" />
+      </div>
+      <!-- email box -->
+      <div>
+        <input
+          type="email"
+          placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)"
+        />
+      </div>
+      <!-- radio box -->
+      <div>
+        <div class="gender-radio">
+          <input id="male" type="radio" name="gender" />
+          <label for="male">남자</label>
+          <input id="female" type="radio" name="gender" />
+          <label for="female">여자</label>
+        </div>
+        <div class="country-radio">
+          <input id="local" type="radio" name="country" />
+          <label for="local">내국인</label>
+          <input id="foreigner" type="radio" name="country" />
+          <label for="foreigner">외국인</label>
+        </div>
       </div>
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
