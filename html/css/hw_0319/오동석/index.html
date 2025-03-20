@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>폼 예시</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="field">
+        <div class="icon"></div>
+        <input type="text" placeholder="이름" />
+      </div>
+
+      <div class="field">
+        <div class="icon"></div>
+        <input type="text" placeholder="생년월일 8자리" />
+      </div>
+
+      <div class="field">
+        <div class="icon"></div>
+        <div class="select-wrap">
+          <select>
+            <option>통신사 선택</option>
+            <option>SKT</option>
+            <option>KT</option>
+            <option>LG U+</option>
+            <option>알뜰폰</option>
+          </select>
+          <div class="arrow-icon"></div>
+        </div>
+      </div>
+
+      <div class="radio-row">
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="gender" value="male" checked />
+            남자
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" />
+            여자
+          </label>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="nation" value="korean" checked />
+            내국인
+          </label>
+          <label>
+            <input type="radio" name="nation" value="foreigner" />
+            외국인
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

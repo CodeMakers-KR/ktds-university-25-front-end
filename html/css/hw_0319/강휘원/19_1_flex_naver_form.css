@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.regist_wrapper {
+  border: 1px solid #8885;
+  border-radius: 0.5rem;
+  width: 31.25rem;
+  padding: 0.625rem;
+}
+
+/* 실명인증 box */
+.regist_wrapper > div:nth-child(1) {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 아이디 box */
+.regist_wrapper > div:nth-child(2) {
+  margin-top: 0.5rem;
+  border: 1px solid #08c008;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.625rem;
+  display: flex;
+}
+
+.regist_wrapper > div:nth-child(2)::after {
+  content: "@naver.com";
+}
+
+.regist_wrapper > div:nth-child(2) > input[type="text"] {
+  border: 0;
+  outline: 0;
+  flex-grow: 1;
+}
+
+/* 비밀번호 box */
+.regist_wrapper > div:nth-child(3) {
+  border-left: 1px solid #08c008;
+  border-right: 1px solid #08c008;
+  padding: 0.625rem;
+  display: flex;
+}
+
+.regist_wrapper > div:nth-child(3) > input[type="password"] {
+  border: 0;
+  outline: 0;
+  flex-grow: 1;
+}
+
+/* email box */
+.regist_wrapper > div:nth-child(4) {
+  border: 1px solid #08c008;
+  padding: 0.625rem;
+  display: flex;
+}
+
+.regist_wrapper > div:nth-child(4) > input[type="email"] {
+  border: 0;
+  outline: 0;
+  flex-grow: 1;
+}
+
+/* radio box */
+.regist_wrapper > div:nth-child(5) {
+  border: 1px solid #08c008;
+  border-top: 0;
+  padding: 1.3rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: center;
+  font-size: 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* radio 숨김 */
+.regist_wrapper > div:nth-child(5) input[type="radio"] {
+  display: none;
+}
+
+/* radio label style */
+.regist_wrapper > div:nth-child(5) input[type="radio"] + label {
+  font-size: 1rem;
+  border: 1px solid #08c008;
+  color: #08c008;
+  padding: 0.625rem;
+}
+
+/* radio checked effect */
+.regist_wrapper > div:nth-child(5) input[type="radio"]:checked + label {
+  color: #f00;
+}
+
+/* radio div 간 여백 부여 */
+.gender-radio {
+  margin-right: 1rem;
+}
+
+/* border-radius 부여 */
+.gender-radio > input[type="radio"]:nth-of-type(1) + label {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.gender-radio > input[type="radio"]:nth-of-type(2) + label {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.country-radio > input[type="radio"]:nth-of-type(1) + label {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.country-radio > input[type="radio"]:nth-of-type(2) + label {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* 겹치는 border 제거 */
+.regist_wrapper > div:nth-child(5) > .gender-radio > input[type="radio"]:nth-of-type(2) + label {
+  border-left: 0;
+}
+
+.regist_wrapper > div:nth-child(5) > .country-radio > input[type="radio"]:nth-of-type(2) + label {
+  border-left: 0;
+}
+
