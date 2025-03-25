@@ -25,10 +25,12 @@ $().ready(function () {
        * jqueryobject.on("event", event handler);
        * jqueryobject.trigger("event");
        */
-
       $(this).trigger("keyup");
 
       console.log("태그의 포커스를 잃었습니다. 현재 입력된 값은");
       console.log($(this).val() + "입니다.");
+    })
+    .on("change", function () {
+      $(this).trigger("keyup");
     });
 });
